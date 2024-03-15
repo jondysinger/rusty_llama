@@ -1,6 +1,5 @@
 use cfg_if::cfg_if;
 
-use api::ws;
 pub mod api;
 pub mod model;
 
@@ -13,6 +12,7 @@ async fn main() -> std::io::Result<()> {
 
     use actix_files::Files;
     use actix_web::*;
+    use api::ws;
     use leptos::*;
     use leptos_actix::{generate_route_list, LeptosRoutes};
     use rusty_llama::app::*;
